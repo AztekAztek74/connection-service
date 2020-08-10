@@ -90,3 +90,9 @@ body {
 .form__input-checkbox {
   display: none;
 }
+
+#validation {
+  color: #ff0022;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
