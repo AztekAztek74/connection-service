@@ -14,6 +14,7 @@ function Validations() {
         FullName == "" ||
         address == "" ||
         Phone == "" ||
+        isNaN(Phone) ||
         HandlingReason == "" ||
         city == ""
       ) {
@@ -26,18 +27,19 @@ function Validations() {
         !FullName == "" &&
         !address == "" &&
         !Phone == "" &&
+        !isNaN(Phone) &&
         !HandlingReason == "" &&
         !city == ""
       ) {
         validText.innerHTML = "";
         document.getElementById("transitionTarif").removeAttribute("disabled");
       }
-      if (Phone == "") {
+      if (Phone == "" || isNaN(Phone)) {
         document
           .getElementById("earlyCompletion")
           .setAttribute("disabled", true);
       }
-      if (!Phone == "") {
+      if (!Phone == "" && !isNaN(Phone)) {
         document.getElementById("earlyCompletion").removeAttribute("disabled");
       }
       break;
