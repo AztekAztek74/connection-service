@@ -218,7 +218,7 @@ function RenderForms() {
           <div class="block-button">
             <button class="block-button__item" onClick="changeStepBid('earlyCompletion', event)">Досрочное завершение</button>
             <button class="block-button__item" onClick="changeStepBid('selectTariffs', event)">Изменить тарифы</button>
-            <button class="block-button__item" onClick="connectionReqest()">Отправить форму</button>
+            <button class="block-button__item" onClick="connectionReqest(event)">Отправить форму</button>
           </div>
         </form>
         `;
@@ -228,7 +228,7 @@ function RenderForms() {
       <form class="form">
         <h1>Поблагодарите клиента</h1>
         <div class="block-button">
-          <button class="block-button__item" onClick="newReqest()">Новая заявка</button>
+          <button class="block-button__item" onClick="newReqest(event)">Новая заявка</button>
         </div>
       </form>
       `;
